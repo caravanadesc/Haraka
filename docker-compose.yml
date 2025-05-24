@@ -1,0 +1,9 @@
+version: '3.8'
+
+services:
+  haraka:
+    build: .
+    container_name: haraka
+    ports:
+      - "25:25"
+    restart: unless-stopped
